@@ -14,7 +14,7 @@ namespace Exercicio.Entities
         }
         public override double Tax()
         {
-            if (NumberOfEmployees < 10)
+            if (NumberOfEmployees > 10)
             {
                 return AnuallIncome * 0.14;
             }
@@ -23,6 +23,6 @@ namespace Exercicio.Entities
                 return AnuallIncome * 0.16;
             }
         }
-        
+
     }
 }
