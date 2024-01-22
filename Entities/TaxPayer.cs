@@ -3,15 +3,15 @@ namespace Exercicio.Entities
     public abstract class TaxPayer
     {
         public string Name { get; set; }
-        public double AnualIncome { get; set; }
+        public double AnuallIncome { get; set; }
 
         public TaxPayer()
         {
         }
-        public TaxPayer(string name, double anualincome)
+        public TaxPayer(string name, double anuallincome)
         {
             Name = name;
-            AnualIncome = anualincome;
+            AnuallIncome = anuallincome;
         }
         public abstract double Tax();
     }
